@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+input[class=new-input]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+input[class=roomNumber]::-webkit-outer-spin-button,
+input[class=roomNumber]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.et_pb_module {
+  padding: 5px;
+}
+
+/* Result Skip Results Iframe
+EDIT ON */
+
+.select-button {
+  text-align: center;
+  margin: 30px;
+}
+
+.et_pb_module {
+  display: inline-block;
+}
+
+.secList {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: 0.4s;
+  padding: 0px 100px;
+}
+
+.secList:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+.et_pb_text_inner1 {
+  background-color: #EAD9FF;
+}
+
+.et_pb_text_inner2 {
+  background-color: #FFD5EC;
+  margin-top: 10px;
+}
+
+.et_pb_text_inner3 {
+  background-color: #FFDBC9;
+}
+
+/* 更新ページのセレクトボタンCSS */
+
+.checkboxesSelect {
+  margin: 0px 10px 0px 5px;
+}
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  background-color: #505050;
+  opacity: 0.8;
+  color: white;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+.all-delete {
+  display: block;
+  margin: 10px auto;
+  padding: 15px 50px;
+  background: linear-gradient(to right, #e66465 50%, #fff 50%);
+  background-size: 200% 100.5%;
+  background-position: right bottom;
+  font: 1.25em "Montserrat";
+  color: #020202;
+  border: none;
+  border-color: none;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s ease-out;
+}
+
+.all-delete:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.add-button {
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  display: block;
+  margin: 10px auto;
+  position: relative;
+  line-height: 60px;
+  overflow: hidden;
+}
+
+.add-button:focus {
+  outline: none;
+}
+
+.button-text {
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  transition: all 1s;
+  /* アニメーション実行時間 */
+}
+
+.button-text:nth-child(1) {
+  top: 0;
+}
+
+.button-text:nth-child(2) {
+  top: 0;
+  left: -100%;
+}
+
+.add-button:hover .button-text:nth-child(1) {
+  left: 100%;
+}
+
+.add-button:hover .button-text:nth-child(2) {
+  top: 0;
+  left: 0;
+}
+
+.create-new:focus {
+  outline: none;
+}
+
+.create-new {
+  display: block;
+  margin: 10px auto;
+  position: relative;
+  padding: 10px 40px;
+  background-color: #fff;
+  border: solid 2px #212529;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1.3px;
+  color: #212529;
+}
+
+.create-new::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background: #000;
+  border-radius: 0 50% 50% 0;
+  transition: all 0.3s;
+}
+
+.create-new:hover::before {
+  content: "\F061";
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  line-height: 30px;
+  font-weight: bold;
+  transform: translateX(135px) translateY(8px);
+}
+
+.part-delete:focus {
+  outline: none;
+}
+
+.part-delete {
+  padding: 0;
+  border: solid 0;
+  display: block;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 200px;
+  font-size: 20px;
+  perspective: 500px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+.part-delete:hover .box {
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.box {
+  position: relative;
+  display: block;
+  transform: rotateX(0);
+  transition: all 0.4s;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+}
+
+.box-face {
+  position: relative;
+  display: block;
+  padding: 15px 0px;
+  width: 100%;
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front {
+  background: #eb6100;
+}
+
+.back {
+  position: absolute;
+  top: 100%;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  background: #dc5b00;
+}
+
+.right-arrow {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 1rem;
+}
+

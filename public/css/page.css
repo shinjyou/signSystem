@@ -1,0 +1,62 @@
+.pagination-container {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.pagination {
+  display: inline;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+.active {
+  border: 1px solid #A4c6ff;
+  background-color: #A4C6FF;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+table th {
+  padding: 15px 30px;
+}
+
+.add-room {
+  background-color: #CBFFD3;
+}
+
+.resave {
+  background: rgba(255, 0, 0, 0.6);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.resave-post {
+  margin: 10px;
+}
+
+.room-number {
+  margin: 10px;
+}
+
+.time-set {
+  margin: 10px;
+}
+
+.resave-set-button {
+  margin: 10px;
+  background-color: darkseagreen;
+  font-weight: bold;
+  padding: 10px 30px;
+  box-shadow: 0px 3px 1px #506450, 0px -1px 3px #637c63 inset;
+  border-radius: 30px;
+  border: solid 0px;
+}
+
+.resave-set-button:active {
+  outline: none;
+  box-shadow: 0px -1px 3px #637c63 inset;
+  position: relative;
+  top: 3px;
+}
+

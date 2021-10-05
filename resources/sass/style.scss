@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+////
+
+
+body {
+    margin: 0;
+    position: relative;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    min-height:  100vh;
+}
+
+header { 
+    background-color: black;
+    padding: 20px;
+
+}
+.header-left { 
+    color: white; 
+    float: left; 
+}
+.header-left a { 
+    color:white; 
+    text-decoration: none; 
+}
+.header-right { 
+    color: white; 
+    text-align: right;
+}
+div.pagination {
+    text-align: center;
+}
+main h2{ 
+    margin:0px; 
+    font-size: 90px; 
+    color: #f6f6f6; 
+    text-align: right;
+}
+
+a.paging {
+    text-align: center;
+    margin-right: 10px;
+}
+li {
+    float: left;
+    border: black solid 1px;
+    padding:5px;
+    margin:1px;
+}
+
+//表
+table {
+    clear: left;
+    border-collapse: collapse;
+}
+//見出し
+table th { 
+    border:1px solid;
+    padding:20px 40px;
+}
+//カラム
+table tr {
+    text-align: center;
+    border: 1px solid;
+}
+//セル
+table td { 
+    width: 40%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer-name { 
+    color: white; 
+    margin: 0px; 
+    text-align:center;
+}
+
+.wrapper{
+    height: 100%;
+    min-height: 10vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 100px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+  }
