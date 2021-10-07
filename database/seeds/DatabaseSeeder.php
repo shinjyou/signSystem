@@ -14,16 +14,20 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call('InitalDataSeeder::class');
         DB::table('building')->insert([
-            'building_id' => 'admin',
+            'building_id' => 'admin'
+        ]);
+        DB::table('building')->insert([
             'building_id' => 'a'
         ]);
         
+        
         DB::table('password')->insert([
-            'pass' => md5('admin'),
             'building_id' => '1',
-
-            'pass' => md5('a'),
-            'building_id' => '2'
+            'pass' => md5('admin')
+        ]);
+        DB::table('password')->insert([
+            'building_id' => '2',
+            'pass' => md5('a')
         ]);
     }
 }
