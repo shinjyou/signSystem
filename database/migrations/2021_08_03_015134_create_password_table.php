@@ -14,7 +14,7 @@ class CreatePasswordTable extends Migration
     public function up()
     {
         Schema::create('password', function (Blueprint $table) {
-            $table->integer('building_id');
+            $table->bigIncrements('building_id');
             $table->text('pass');
             $table->timestamps();
         });

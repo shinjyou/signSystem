@@ -22,11 +22,9 @@ class DatabaseSeeder extends Seeder
         
         
         DB::table('password')->insert([
-            'building_id' => '1',
             'pass' => md5('admin')
         ]);
         DB::table('password')->insert([
-            'building_id' => '2',
             'pass' => md5('a')
         ]);
 
