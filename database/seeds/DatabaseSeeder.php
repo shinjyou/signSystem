@@ -29,5 +29,10 @@ class DatabaseSeeder extends Seeder
             'building_id' => '2',
             'pass' => md5('a')
         ]);
+
+        DB::table('room')->insert([
+            'building_id' => '2',
+            'room' => '101'
+        ]);
     }
 }
