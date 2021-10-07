@@ -27,8 +27,9 @@ class OrgController extends Controller
         $result = DB::table('building')
             ->join('password','building.id','=','password.building_id') //buildingとpasswordを結合
             ->where('building.building_id',$place) //プルダウン値で検索
-            ->first()->pass;
-        $pass = $result; //プルダウンの値で検索したパスを抜きだす
+            ->first();
+            dd($place,$result);
+        $pass = $result->pass; //プルダウンの値で検索したパスを抜きだす
         $inputPass = md5($request->pass); //パスワード入力を受け取る
 
         if ($place == "admin") { //管理画面
