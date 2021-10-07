@@ -192,7 +192,7 @@ class OrgController extends Controller
     public function page(Request $request) //マンションページ
     {
         if(is_null($request->session()->get('place'))){ //セッションが切れたらloginページへ
-            return view('view.login');
+            return redirect('login');
         } else {
             $place = $request->session()->get('place');
         }
@@ -259,7 +259,7 @@ class OrgController extends Controller
     public function room(Request $request) //サインページ
     {
         if(is_null($request->session()->get('place'))){ //セッションが切れたらloginページへ
-            return view('view.login');
+            return redirect('login');
         } else {
             $place = $request->session()->get('place');
         }
