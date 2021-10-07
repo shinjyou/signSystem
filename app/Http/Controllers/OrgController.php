@@ -197,7 +197,7 @@ class OrgController extends Controller
             $place = $request->session()->get('place');
         }
 
-        $page = substr($request->page,0,1); //現在のページの値
+        $page = $request->page; //現在のページの値
 
         $pageMin = $page * 100; //３桁に変換
         $pageMax = $pageMin + 100;  //100の位を更新
@@ -212,15 +212,14 @@ class OrgController extends Controller
                 ->join('building','building.id','=','room.building_id')
                 ->where('building.building_id',$place)
                 ->orderby('room','desc')->limit(1)->first();
-        $lastFloor = substr($last->room,0,1);
+        $lastFloor = substr($last->room,0,strlen($last->room)-2);
 
         $start = DB::table('room')  //初めの階層を抜き出す
                 ->join('building','building.id','=','room.building_id')
                 ->where('building.building_id',$place)
                 ->orderby('room','asc')->limit(1)->first();
-        $startFloor = substr($start->room,0,1);
+        $startFloor = substr($start->room,0,strlen($start->room)-2);
 
-        // dd($data);
         return view('view.page',
             ['place'=>$place, 'page'=>$page, 'data'=>$data,
             'lastFloor'=>$lastFloor,'startFloor'=>$startFloor,]);
