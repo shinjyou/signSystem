@@ -16,21 +16,21 @@ class DatabaseSeeder extends Seeder
         DB::table('building')->insert([
             'building_id' => 'admin'
         ]);
-        DB::table('building')->insert([
-            'building_id' => 'a'
-        ]);
+        // DB::table('building')->insert([
+        //     'building_id' => 'a'
+        // ]);
         
         
         DB::table('password')->insert([
             'pass' => md5('admin')
         ]);
-        DB::table('password')->insert([
-            'pass' => md5('a')
-        ]);
+        // DB::table('password')->insert([
+        //     'pass' => md5('a')
+        // ]);
 
-        DB::table('room')->insert([
-            'building_id' => '2',
-            'room' => '201'
-        ]);
+        // DB::table('room')->insert([
+        //     'building_id' => '2',
+        //     'room' => '201'
+        // ]);
     }
 }

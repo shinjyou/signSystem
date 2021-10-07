@@ -39,7 +39,7 @@
 
     <table> <!-- 表 -->
         @foreach($data as $item)
-            @if($item->imag)
+            @if(isset($item->imag))
             <tr class="add-room">
                 <th class=“room-num”>{{ $item->room }}</th>
                 <td>@if( !empty($item->time))<span class="resave">予約</span>@endif</td>

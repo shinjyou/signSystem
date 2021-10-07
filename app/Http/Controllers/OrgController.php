@@ -252,7 +252,7 @@ class OrgController extends Controller
             ->join('building','building.id','=','room.building_id')
             ->where('building.building_id', $place)
             ->where('room.room', $room)
-            ->update(['imag' => '']);
+            ->update(['imag' => null]);
         return redirect("room?room=$room");
     }
 
