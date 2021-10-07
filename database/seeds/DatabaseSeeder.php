@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('room')->insert([
             'building_id' => '2',
-            'room' => '101'
+            'room' => '201'
         ]);
     }
 }
