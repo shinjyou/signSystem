@@ -28,7 +28,6 @@ class OrgController extends Controller
             ->join('password','building.id','=','password.building_id') //buildingとpasswordを結合
             ->where('building.building_id',$place) //プルダウン値で検索
             ->first();
-            dd($place,$result);
         $pass = $result->pass; //プルダウンの値で検索したパスを抜きだす
         $inputPass = md5($request->pass); //パスワード入力を受け取る
 
