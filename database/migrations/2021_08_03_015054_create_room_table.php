@@ -17,7 +17,8 @@ class CreateRoomTable extends Migration
             $table->bigIncrements('id');
             $table->integer('building_id');
             $table->integer('room');
-            $table->text('imag');
+            $table->longtext('imag')->nullable()->default(null);
+            $table->time('time')->nullable()->default(null);
             $table->timestamps();
         });
     }

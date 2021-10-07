@@ -147,7 +147,7 @@ class OrgController extends Controller
         ]);
     }
 
-    public function partAdd(Request $request)
+    public function partAdd(Request $request) //一部追加
     {
         $failed = [];
         for($i=0; $i < count($request->item); $i++){
